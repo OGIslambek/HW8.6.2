@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Введите путь");
+            string path = Console.ReadLine();
+            Console.WriteLine($"Размер файлов и папок {DirectorySize.Size(path)} байт");
         }
     }
 }
